@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What a Real Sleep Coach Would Tell a 44-Year-Old Woman</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#0D1117;--ink-mid:#3D4A5C;--ink-muted:#6B7A90;
+  --rule:#E4E8F0;--bg:#F7F4EF;--white:#fff;
+  --teal:#2D7D8A;--teal-deep:#1A5C67;--teal-s:#E8F4F6;
+  --forest:#2C4A3E;--forest-s:#E6EDE9;
+  --amber:#92400E;--amber-s:#FEF3C7;
+  --blue:#1648C8;--blue-s:#EEF2FF;
+  --red-s:#FEE2E2;--gray-s:#F1F5F9;
+  --serif:'Lora',Georgia,serif;
+  --sans:'Sora',system-ui,sans-serif;
+  --mono:'DM Mono',monospace;
+}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.7;min-height:100vh}
+.page{max-width:760px;margin:0 auto;padding:60px 24px 100px}
+
+/* MASTHEAD */
+.masthead{border-bottom:1px solid var(--rule);padding-bottom:32px;margin-bottom:48px}
+.pub-name{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--teal);margin-bottom:20px;display:flex;align-items:center;gap:8px}
+.pub-name::before{content:'';display:block;width:24px;height:2px;background:var(--teal)}
+h1{font-family:var(--serif);font-size:clamp(26px,4vw,40px);font-weight:600;
+  color:var(--ink);line-height:1.2;margin-bottom:14px;letter-spacing:-.02em}
+.deck{font-size:18px;color:var(--ink-mid);line-height:1.5;margin-bottom:24px;
+  font-style:italic;font-family:var(--serif)}
+.meta{font-size:12px;color:var(--ink-muted);display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+.meta-dot{width:3px;height:3px;border-radius:50%;background:var(--rule);flex-shrink:0}
+.tag{display:inline-block;padding:3px 9px;border-radius:4px;
+  background:var(--teal-s);color:var(--teal-deep);font-size:11px;font-weight:600}
+
+/* BODY TEXT */
+.prose{font-size:17px;line-height:1.8;color:var(--ink)}
+.prose p{margin-bottom:1.4em}
+.prose p:last-child{margin-bottom:0}
+
+/* SECTION HEADERS */
+.section{margin:56px 0 28px}
+.section-num{font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--teal);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.section-num::before{content:'';display:block;width:16px;height:2px;background:var(--teal)}
+h2{font-family:var(--serif);font-size:26px;font-weight:600;color:var(--ink);
+  line-height:1.3;letter-spacing:-.01em}
+
+/* PULL QUOTE */
+.pullquote{border-left:3px solid var(--teal);padding:16px 24px;margin:36px 0;
+  background:var(--teal-s);border-radius:0 8px 8px 0}
+.pullquote p{font-family:var(--serif);font-size:19px;font-style:italic;
+  color:var(--teal-deep);line-height:1.5;margin:0}
+
+/* LOOP DIAGRAM */
+.loop{margin:32px 0;display:flex;flex-direction:column;gap:3px;max-width:520px}
+.loop-row{padding:13px 20px;border-radius:8px;display:flex;justify-content:space-between;
+  align-items:center;font-size:13px;font-weight:600}
+.loop-row .loop-note{font-size:11px;font-weight:400;opacity:.75;text-align:right;max-width:200px;line-height:1.3}
+.lr-sense{background:var(--forest-s);color:var(--forest)}
+.lr-predict{background:var(--amber-s);color:var(--amber)}
+.lr-act{background:var(--teal-s);color:var(--teal-deep)}
+.lr-active{background:var(--teal);color:#fff}
+.lr-active .loop-note{opacity:.85}
+.lr-measure{background:var(--blue-s);color:var(--blue)}
+.loop-arrow{text-align:center;color:var(--ink-muted);font-size:16px;line-height:1.2}
+.loop-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--teal);margin-top:6px;text-align:center}
+
+/* BUILDING BLOCKS */
+.blocks{margin:24px 0;display:flex;flex-direction:column;gap:10px}
+.block{display:flex;gap:14px;padding:16px 18px;background:var(--white);
+  border-radius:8px;border:1px solid var(--rule);align-items:flex-start}
+.block-num{font-family:var(--mono);font-size:12px;font-weight:500;
+  color:var(--teal);background:var(--teal-s);padding:3px 8px;
+  border-radius:4px;flex-shrink:0;margin-top:2px}
+.block-title{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:3px}
+.block-body{font-size:13px;color:var(--ink-mid);line-height:1.6}
+
+/* METRICS GRID */
+.metrics{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:28px 0}
+.metric-card{background:var(--white);border:1px solid var(--rule);border-radius:12px;padding:20px}
+.metric-label{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-muted);margin-bottom:8px}
+.metric-name{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:6px;line-height:1.3}
+.metric-body{font-size:12px;color:var(--ink-mid);line-height:1.5}
+.metric-card.primary{border-color:var(--teal);background:var(--teal-s)}
+.metric-card.primary .metric-label{color:var(--teal-deep)}
+.metric-card.primary .metric-name{color:var(--teal-deep)}
+.metric-card.warning{border-color:#F59E0B}
+
+/* EXPERIMENT CARD */
+.experiment{background:var(--white);border:1px solid var(--rule);border-radius:12px;
+  padding:24px 28px;margin:28px 0;overflow:hidden;position:relative}
+.experiment::before{content:'EXPERIMENT';position:absolute;top:18px;right:20px;
+  font-size:9px;font-weight:700;letter-spacing:.15em;color:var(--blue);
+  background:var(--blue-s);padding:3px 8px;border-radius:4px}
+.exp-title{font-size:15px;font-weight:600;color:var(--ink);margin-bottom:16px}
+.exp-weeks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+.exp-week{padding:12px 14px;border-radius:8px;background:var(--gray-s)}
+.exp-week-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-muted);margin-bottom:4px}
+.exp-week-val{font-size:13px;font-weight:600;color:var(--ink)}
+.exp-result{background:var(--teal-s);border-radius:8px;padding:12px 16px}
+.exp-result-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--teal-deep);margin-bottom:4px}
+.exp-result-val{font-size:13px;color:var(--teal-deep);line-height:1.5}
+
+/* FLYWHEEL */
+.flywheel{margin:28px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;
+  border:1px solid var(--rule);border-radius:12px;overflow:hidden}
+.fw-step{padding:16px 14px;background:var(--white);text-align:center;position:relative}
+.fw-step:not(:last-child){border-right:1px solid var(--rule)}
+.fw-step:not(:last-child)::after{content:'→';position:absolute;right:-10px;top:50%;
+  transform:translateY(-50%);font-size:14px;color:var(--teal);font-weight:700;z-index:1}
+.fw-icon{font-size:22px;margin-bottom:6px}
+.fw-label{font-size:11px;font-weight:600;color:var(--ink);line-height:1.3;margin-bottom:4px}
+.fw-note{font-size:10px;color:var(--ink-muted);line-height:1.4}
+.fw-step.active{background:var(--teal-s)}
+.fw-step.active .fw-label{color:var(--teal-deep)}
+.fw-caption{font-size:11px;color:var(--ink-muted);text-align:center;margin-top:8px;font-style:italic}
+
+/* WHY SLEEP CHIPS */
+.sleep-reasons{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:24px 0}
+.sleep-reason{background:var(--white);border:1px solid var(--rule);border-radius:10px;
+  padding:14px 16px;display:flex;gap:12px;align-items:flex-start}
+.sr-icon{font-size:18px;flex-shrink:0;margin-top:1px}
+.sr-title{font-size:13px;font-weight:600;color:var(--ink);margin-bottom:3px}
+.sr-body{font-size:12px;color:var(--ink-mid);line-height:1.5}
+
+/* SECOND RISE UPGRADED */
+.second-rise{background:var(--forest);border-radius:14px;padding:28px 32px;margin:40px 0;color:#fff}
+.sr2-eyebrow{font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;
+  color:rgba(255,255,255,.6);margin-bottom:12px}
+.sr2-title{font-family:var(--serif);font-size:20px;font-weight:600;color:#fff;
+  margin-bottom:12px;line-height:1.3}
+.sr2-body{font-size:14px;color:rgba(255,255,255,.8);line-height:1.7;margin-bottom:20px}
+.sr2-flow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.sr2-step{background:rgba(255,255,255,.12);border-radius:6px;padding:6px 12px;
+  font-size:12px;font-weight:600;color:#fff}
+.sr2-arrow{color:rgba(255,255,255,.4);font-size:14px}
+.sr2-step.highlight{background:var(--teal);color:#fff}
+.sr2-link{display:inline-block;padding:10px 20px;background:#fff;color:var(--forest);
+  border-radius:8px;font-size:13px;font-weight:700;text-decoration:none}
+
+/* RISK CALLOUT */
+.risk{background:var(--white);border:1px solid #F59E0B;border-radius:10px;
+  padding:18px 22px;margin:32px 0}
+.risk-label{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--amber);margin-bottom:8px}
+.risk-stack{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:13px;font-weight:500;color:var(--ink-mid)}
+.risk-item{background:var(--gray-s);padding:5px 12px;border-radius:6px;color:var(--ink)}
+.risk-arrow{color:var(--amber);font-weight:700}
+.risk-item.dim{opacity:.45}
+.risk-item.highlight{background:var(--amber-s);color:var(--amber)}
+
+/* CONCLUSION */
+.conclusion{border-top:2px solid var(--teal);padding-top:40px;margin-top:56px}
+.conclusion-hed{font-family:var(--serif);font-size:22px;font-weight:600;
+  color:var(--ink);margin-bottom:20px}
+
+/* BYLINE */
+.byline{margin-top:56px;padding-top:28px;border-top:1px solid var(--rule);
+  display:flex;gap:16px;align-items:flex-start}
+.byline-dot{width:44px;height:44px;border-radius:50%;background:var(--teal);
+  display:flex;align-items:center;justify-content:center;
+  font-weight:700;font-size:16px;color:#fff;flex-shrink:0}
+.byline-name{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:2px}
+.byline-bio{font-size:13px;color:var(--ink-muted);line-height:1.5}
+
+@media(max-width:640px){
+  .metrics{grid-template-columns:1fr}
+  .exp-weeks{grid-template-columns:1fr}
+  .loop-row .loop-note{display:none}
+  h1{font-size:24px}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- MASTHEAD -->
+  <div class="masthead">
+    <div class="pub-name">Her Health Stack</div>
+    <h1>What a Real Sleep Coach Would Tell a 44-Year-Old Woman</h1>
+    <div class="deck">Oura has the data to build the world's best sleep coaching system for perimenopausal women. What that product actually looks like.</div>
+    <div class="meta">
+      <span>Karen Kagoo</span>
+      <span class="meta-dot"></span>
+      <span>March 2026</span>
+      <span class="meta-dot"></span>
+      <span class="tag">Product Architecture</span>
+      <span class="tag">Sleep</span>
+      <span class="tag">Women's Health</span>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <div class="prose">
+    <p>A good personal trainer does not hand you a number and walk away. They watch how you move, ask how you slept, look at what you did yesterday, and tell you what to do today. The recommendation is specific. The reasoning is visible. It changes based on what is actually happening in your body, not a population average.</p>
+    <p>That is not what Oura does. Not yet.</p>
+    <p>Oura gives you a Sleep Score. It tells you whether last night was good or bad. It does not tell you why it happened, whether it matters, what to do tonight, or whether what you are experiencing is a problem at all, or just what sleep looks like for a woman whose body is changing in ways the product was not built to understand.</p>
+    <p>This post is about what the product should do instead, framed as product architecture rather than a feature request.</p>
+  </div>
+
+  <!-- SECTION 1: PERIMENOPAUSE -->
+  <div class="section">
+    <div class="section-num">01</div>
+    <h2>What perimenopause actually does to sleep</h2>
+  </div>
+
+  <div class="prose">
+    <p>Sleep disruption during perimenopause is not a failure of discipline or hygiene. It is physiology.</p>
+    <p>Estrogen and progesterone both influence sleep architecture directly. As levels fluctuate and decline, women experience measurable changes: reduced deep sleep, more fragmented cycles, difficulty returning to sleep after waking, and often a shift in circadian timing that pushes the natural sleep window earlier. Vasomotor symptoms (night sweats, hot flashes) cause temperature spikes that interrupt sleep onset and maintenance. These are not side effects. They are the mechanism.</p>
+    <p>Oura captures all of this. Skin temperature deviation is one of the ring's most sensitive signals. HRV variability, sleep fragmentation, reduced deep sleep percentage, it is all in the data. The problem is the product surfaces these signals as deficits rather than context. A fragmented night during a perimenopause temperature event is not the same clinical picture as a fragmented night from alcohol or a stressful workday. The score does not know the difference. The coach should.</p>
+  </div>
+
+  <!-- SECTION 2: THE COACH SCENARIO -->
+  <div class="section">
+    <div class="section-num">02</div>
+    <h2>What a coach would actually do with that data</h2>
+  </div>
+
+  <div class="prose">
+    <p>It is 9:40pm on a Tuesday. She has had a hard day: two difficult conversations, a long commute, a workout she pushed through even though her body was not really in it. Her ring has been tracking all of it.</p>
+    <p>A coach would not wait for her to ask.</p>
+  </div>
+
+  <div class="pullquote">
+    <p>"Your HRV has been trending down for three days, your temperature is slightly elevated above your personal baseline, and your last two nights both had fragmented second halves. Tonight you need more than your average. Your window opens in about 25 minutes."</p>
+  </div>
+
+  <div class="prose">
+    <p>Not a score. Not a chart. A specific, reasoned recommendation at the moment it is useful.</p>
+    <p>In the morning, the coach notes what happened:</p>
+  </div>
+
+  <div class="pullquote">
+    <p>"You got 7.2 hours, but deep sleep was lower than your baseline, consistent with the temperature pattern this week. This is expected. Not a trend requiring action yet."</p>
+  </div>
+
+  <div class="prose">
+    <p>That last sentence matters more than it looks. Telling a perimenopausal woman her deep sleep is low without telling her it is expected given her physiology is not neutral. It is harmful. A coach would not do that.</p>
+    <p>Most wearable products miss a basic design principle: <strong>the value of biometric intelligence is not in explaining the past. It is in influencing the next decision.</strong> A morning sleep score tells you what already happened. A 9:45pm notification tells you what to do before the damage is done. Timing is not a UX detail. It is the entire product.</p>
+  </div>
+
+  <!-- SECTION 3: NON-NEGOTIABLES -->
+  <div class="section">
+    <div class="section-num">03</div>
+    <h2>The non-negotiables</h2>
+  </div>
+
+  <div class="blocks">
+    <div class="block">
+      <div class="block-num">01</div>
+      <div>
+        <div class="block-title">Personal baseline, not population norm</div>
+        <div class="block-body">Every signal interpreted against her 90-day rolling history, not Oura's user cohort. A "low" HRV for someone with a baseline of 28 is not the same as low for someone with a baseline of 55. The score means nothing without the individual reference point.</div>
+      </div>
+    </div>
+    <div class="block">
+      <div class="block-num">02</div>
+      <div>
+        <div class="block-title">Life-stage awareness built in, not bolted on</div>
+        <div class="block-body">The perimenopause model should be a first-class input. Temperature disruption, fragmented sleep, circadian shift, all of these should trigger a different interpretive frame, not just a lower score. The product needs to know what is expected for her body right now, and say so.</div>
+      </div>
+    </div>
+    <div class="block">
+      <div class="block-num">03</div>
+      <div>
+        <div class="block-title">Proactive push at the right moment</div>
+        <div class="block-body">The intelligence arrives before the decision, not after it. A bedtime recommendation at 11pm is decorative. At 9:45pm, it is useful. The product initiates. It does not wait to be asked.</div>
+      </div>
+    </div>
+    <div class="block">
+      <div class="block-num">04</div>
+      <div>
+        <div class="block-title">Explainability before action</div>
+        <div class="block-body">Every recommendation needs a reason in plain language. Not because users always read it, but because trust is built on transparency. When the product is wrong (and it will sometimes be wrong) a user who understands the reasoning can correct it. A user who received an opaque instruction just loses faith.</div>
+      </div>
+    </div>
+    <div class="block">
+      <div class="block-num">05</div>
+      <div>
+        <div class="block-title">Right depth, right tone</div>
+        <div class="block-body">A 44-year-old perimenopausal woman does not need the same communication as a 22-year-old athlete. She wants clarity, not cheerleading. One action, not five options. Reassurance when the data is within normal range. Urgency only when it is genuinely warranted. Trust is a KPI, not a brand value.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 4: WHY SLEEP FIRST -->
+  <div class="section">
+    <div class="section-num">04</div>
+    <h2>Why sleep is the right wedge</h2>
+  </div>
+
+  <div class="prose">
+    <p>Sleep first. Four compounding reasons:</p>
+  </div>
+
+  <div class="sleep-reasons">
+    <div class="sleep-reason">
+      <div class="sr-icon">📡</div>
+      <div>
+        <div class="sr-title">Cleanest signals</div>
+        <div class="sr-body">HRV, temperature, sleep architecture. Captured passively, nightly, with high compliance. No self-reporting required.</div>
+      </div>
+    </div>
+    <div class="sleep-reason">
+      <div class="sr-icon">⚡</div>
+      <div>
+        <div class="sr-title">Fast feedback loops</div>
+        <div class="sr-body">Improve bedtime by 30 minutes and results show up within days. Not weeks. The model can learn quickly.</div>
+      </div>
+    </div>
+    <div class="sleep-reason">
+      <div class="sr-icon">🔧</div>
+      <div>
+        <div class="sr-title">Simple, reversible interventions</div>
+        <div class="sr-body">Caffeine timing, light exposure, bedtime. Low friction. High compliance rate compared to fitness or nutrition changes.</div>
+      </div>
+    </div>
+    <div class="sleep-reason">
+      <div class="sr-icon">🏆</div>
+      <div>
+        <div class="sr-title">Oura's deepest moat</div>
+        <div class="sr-body">75% of Oura Advisor conversations are already about sleep. The dataset, the clinical research, and the user intent all point here.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="prose">
+    <p>Win sleep completely before expanding. A product that is definitively the best sleep coaching system in the world is defensible. One that is pretty good at sleep, fitness, nutrition, and stress is not.</p>
+  </div>
+
+  <!-- SECTION 5: THE CLOSED LOOP -->
+  <div class="section">
+    <div class="section-num">05</div>
+    <h2>The closed loop is the moat</h2>
+  </div>
+
+  <div class="prose">
+    <p>Most health apps stop at insight. Data goes in, explanation comes out. That is not a coach, it is a very expensive dashboard.</p>
+    <p>A real coaching system runs a loop. Every step has to close.</p>
+  </div>
+
+  <div class="loop">
+    <div class="loop-row lr-sense">
+      <span>Sense</span>
+      <span class="loop-note">HRV, temperature, sleep stages, movement, passively and continuously</span>
+    </div>
+    <div class="loop-arrow">↓</div>
+    <div class="loop-row lr-predict">
+      <span>Predict</span>
+      <span class="loop-note">Tonight is high fragmentation risk based on 3-day HRV trend</span>
+    </div>
+    <div class="loop-arrow">↓</div>
+    <div class="loop-row lr-active">
+      <span>Recommend ★</span>
+      <span class="loop-note">9:45pm — wind down now, lights out by 10:30</span>
+    </div>
+    <div class="loop-arrow">↓</div>
+    <div class="loop-row lr-act">
+      <span>Behavior</span>
+      <span class="loop-note">User follows, partially follows, or ignores</span>
+    </div>
+    <div class="loop-arrow">↓</div>
+    <div class="loop-row lr-measure">
+      <span>Measure outcome</span>
+      <span class="loop-note">Sleep onset, deep sleep %, temperature trajectory</span>
+    </div>
+    <div class="loop-arrow">↓</div>
+    <div class="loop-row lr-predict">
+      <span>Update model</span>
+      <span class="loop-note">What worked for her body, specifically, last night</span>
+    </div>
+    <div class="loop-label">Repeats every night. Gets more accurate every cycle.</div>
+  </div>
+
+  <div class="prose">
+    <p>ChatGPT can read today's sleep score. It cannot run a six-month feedback loop across 5.5 million users that continuously updates based on what actually worked. Oura can, if it builds the architecture to close the loop rather than treating every conversation as a fresh query.</p>
+    <p>The real defensibility argument is not the sensor, not even the dataset. It is the loop. And the loop feeds a flywheel.</p>
+  </div>
+
+  <div class="flywheel">
+    <div class="fw-step">
+      <div class="fw-icon">👥</div>
+      <div class="fw-label">More users</div>
+      <div class="fw-note">5.5M rings, growing</div>
+    </div>
+    <div class="fw-step">
+      <div class="fw-icon">📊</div>
+      <div class="fw-label">Better models</div>
+      <div class="fw-note">Peri-specific baselines</div>
+    </div>
+    <div class="fw-step active">
+      <div class="fw-icon">🎯</div>
+      <div class="fw-label">Better outcomes</div>
+      <div class="fw-note">Sleep actually improves</div>
+    </div>
+    <div class="fw-step">
+      <div class="fw-icon">🔒</div>
+      <div class="fw-label">More trust</div>
+      <div class="fw-note">Retention, referrals, data</div>
+    </div>
+  </div>
+  <div class="fw-caption">Each cycle strengthens the next. General AI answers questions. It does not run experiments on human behavior over years.</div>
+
+  <!-- SECTION 6: HEALTH EXPERIMENTS -->
+  <div class="section">
+    <div class="section-num">06</div>
+    <h2>The feature that makes this visceral: health experiments</h2>
+  </div>
+
+  <div class="prose">
+    <p>Personal health experiments turn this from a coaching layer into something users actively seek out and share.</p>
+    <p>The user runs a controlled test. The ring measures what happens. No new sensors needed, just the feedback loop already described and a product team willing to make behavior change the metric rather than app engagement.</p>
+  </div>
+
+  <div class="experiment">
+    <div class="exp-title">Does moving my caffeine cutoff earlier improve my sleep?</div>
+    <div class="exp-weeks">
+      <div class="exp-week">
+        <div class="exp-week-label">Week 1</div>
+        <div class="exp-week-val">Caffeine cutoff: 4pm</div>
+      </div>
+      <div class="exp-week">
+        <div class="exp-week-label">Week 2</div>
+        <div class="exp-week-val">Caffeine cutoff: 1pm</div>
+      </div>
+    </div>
+    <div class="exp-result">
+      <div class="exp-result-label">Oura measures and reports</div>
+      <div class="exp-result-val">Moving your cutoff earlier improved sleep onset by 18 minutes on average and increased deep sleep by 11%. The effect was strongest on nights when your temperature was already elevated.</div>
+    </div>
+  </div>
+
+  <div class="prose">
+    <p>That is not a generic recommendation. It is a finding about her body, from her data, validated by her own behavior. The kind of result she screenshots and shares, because it is personal in a way no algorithm-generated insight can match.</p>
+  </div>
+
+  <!-- SECOND RISE -->
+  <div class="second-rise">
+    <div class="sr2-eyebrow">Live prototype · Second Rise</div>
+    <div class="sr2-title">I built a version of this. It already uses Oura data.</div>
+    <div class="sr2-body">Second Rise is a protocol engine for midlife women. The latest version connects directly to your Oura ring, reads your sleep score, asks how much time you have, and uses Claude to select the right workout from a curated YouTube library. Low sleep score after a hard week? It recommends a restorative yoga session. High readiness after a recovery day? It suggests strength work. The recommendation changes based on what your body actually did last night, not what you planned to do.</div>
+    <div class="sr2-flow">
+      <div class="sr2-step">Oura sleep score</div>
+      <div class="sr2-arrow">→</div>
+      <div class="sr2-step">Time available</div>
+      <div class="sr2-arrow">→</div>
+      <div class="sr2-step highlight">Claude selects workout</div>
+      <div class="sr2-arrow">→</div>
+      <div class="sr2-step">YouTube library</div>
+    </div>
+    <div class="sr2-body">It is a small proof of concept, not a finished product. But building it made one thing very clear: connecting the data is not the hard part. Knowing what to recommend, and having enough confidence to surface it as a single clear action rather than five options and a disclaimer, that is the product problem Oura needs to solve at scale.</div>
+    <a class="sr2-link" href="https://second-rise-production.up.railway.app/" target="_blank">Try Second Rise →</a>
+  </div>
+
+  <!-- SECTION 7: METRICS -->
+  <div class="section">
+    <div class="section-num">07</div>
+    <h2>What success actually looks like</h2>
+  </div>
+
+  <div class="prose">
+    <p>A product described as a health coach should be held to a coaching standard. Not engagement, not app opens. Whether health actually improves.</p>
+  </div>
+
+  <div class="metrics">
+    <div class="metric-card primary">
+      <div class="metric-label">Primary KPI</div>
+      <div class="metric-name">Sleep improvement rate</div>
+      <div class="metric-body">% of users whose sleep efficiency improves after following recommendations vs those who ignore them. If the coach is working, this gap should be significant within 30 days.</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">Secondary KPI</div>
+      <div class="metric-name">Behavior adoption rate</div>
+      <div class="metric-body">% of nights users follow the sleep protocol. Low adoption is a signal: the recommendation arrived at the wrong time, in the wrong tone, or asked too much. Each is a different product problem with a different fix.</div>
+    </div>
+    <div class="metric-card warning">
+      <div class="metric-label">Trust KPI</div>
+      <div class="metric-name">Dismissal rate by type</div>
+      <div class="metric-body">When users consistently ignore a specific recommendation type, the model has lost credibility there. A rising dismissal rate is an early warning that trust is eroding, before churn shows up in retention numbers.</div>
+    </div>
+  </div>
+
+  <div class="prose">
+    <p>These are not vanity metrics. They are the difference between a health product and health theater.</p>
+    <p>One real tradeoff to design around: proactive push requires opt-in calibration. Notification fatigue is a failure mode. A dismissal rate that rises faster than the model improves means the product is eroding trust faster than it is building it. The solution is not fewer recommendations — it is better ones, surfaced at the right moment with the right specificity. That is a product problem, not a data problem.</p>
+  </div>
+
+  <!-- CONCLUSION -->
+  <div class="conclusion">
+    <div class="conclusion-hed">Why only Oura can build this, and the risk if they don't</div>
+    <div class="prose">
+      <p>The science is not speculative. The signals are not hard to capture. What is hard is having the longitudinal dataset of physiologically diverse users, calibrated over years, with enough women in the perimenopausal cohort to build models that actually generalize. Oura has that. No general-purpose AI company does.</p>
+      <p>Add thirty-plus MDs and PhDs, active clinical research with Stanford, UCLA, and UC Berkeley, and a proprietary women's health model currently in Oura Labs, and you have the only company with both the data and the clinical infrastructure to build this responsibly.</p>
+      <p>Without it, the stack defaults to:</p>
+    </div>
+
+    <div class="risk">
+      <div class="risk-label">Default stack if Oura doesn't act</div>
+      <div class="risk-stack">
+        <span class="risk-item dim">Oura ring</span>
+        <span class="risk-arrow">→</span>
+        <span class="risk-item dim">Apple Health</span>
+        <span class="risk-arrow">→</span>
+        <span class="risk-item highlight">ChatGPT Health</span>
+      </div>
+    </div>
+
+    <div class="prose">
+      <p>The ring becomes a sensor. The intelligence lives somewhere else. The subscription becomes very hard to justify.</p>
+      <p>The architecture is knowable. The dataset exists. The clinical foundation is in place. The question is whether the roadmap follows the logic.</p>
+    </div>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="section">
+    <div class="section-num">Sources &amp; Methodology</div>
+    <h2>Data sources used in this analysis</h2>
+  </div>
+
+  <div class="prose" style="font-size:13px;color:var(--ink-mid)">
+    <p><strong>Sleep science:</strong> Baker FC &amp; Driver HS (2007), "Circadian rhythms, sleep, and the menstrual cycle," Sleep Medicine; Polo-Kantola P et al. (1998), estrogen and sleep architecture in postmenopausal women; Ohayon MM (2006), "Epidemiology of insomnia" — all establish the physiological basis for perimenopause sleep disruption cited in Section 01.</p>
+    <p><strong>Oura product and data:</strong> Oura Labs announcements (women's health LLM, 2025); Oura AI Advisor usage patterns ("75% of conversations about sleep") from published interviews with Oura product team; Oura Ring Gen 4 sensor documentation.</p>
+    <p><strong>Competitive context:</strong> OpenAI ChatGPT Health launch (January 7, 2026); Anthropic Claude for Healthcare (January 11, 2026); Open Wearables Initiative MCP server documentation.</p>
+    <p><strong>Personal disclosure:</strong> Second Rise (second-rise-production.up.railway.app) is my own prototype, built and maintained independently. No financial relationship with Oura or any company mentioned. Analysis reflects my own views.</p>
+  </div>
+
+  <!-- BYLINE -->
+  <div class="byline">
+    <div class="byline-dot">KK</div>
+    <div>
+      <div class="byline-name">Karen Kagoo</div>
+      <div class="byline-bio">Writes Her Health Stack, a newsletter covering the business and product strategy of women's health and fitness. Spent more than a decade at Google building platforms at scale.</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
